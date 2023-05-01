@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Variables and Utils */
+
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --black-gp-secondary-black-100: rgba(45, 58, 58, 1);
+  --black-gp-50: rgba(45, 58, 58, 1);
+  --black-gp-100: rgba(37, 46, 46, 1);
+  --black-gp-200: rgba(4, 15, 15, 1);
+  --green-gp-50: rgba(239, 245, 241, 1);
+  --green-gp-100: rgba(212, 240, 231, 1);
+  --green-gp-200: rgba(159, 233, 200, 1);
+  --green-gp-300: rgba(97, 208, 150, 1);
+  --green-gp-500: rgba(23, 153, 60, 1);
+  --green-gp-400: rgba(43, 168, 74, 1);
+  --green-gp-600: rgba(21, 133, 43, 1);
+  --green-gp-700: rgba(20, 103, 37, 1);
+  --green-gp-800: rgba(16, 70, 30, 1);
+  --green-gp-900: rgba(11, 43, 25, 1);
+  --submarine-gp-50: rgba(241, 246, 246, 1);
+  --submarine-gp-100: rgba(212, 240, 244, 1);
+  --submarine-gp-200: rgba(162, 230, 230, 1);
+  --submarine-gp-300: rgba(104, 202, 200, 1);
+  --submarine-gp-400: rgba(44, 171, 161, 1);
+  --submarine-gp-500: rgba(24, 113, 111, 1);
+  --submarine-gp-600: rgba(24, 113, 111, 1);
+  --submarine-gp-700: rgba(25, 90, 75, 1);
+  --submarine-gp-800: rgba(19, 61, 56, 1);
+  --submarine-gp-900: rgba(13, 37, 40, 1);
+  font-size: 16px;
+}
+
+.heading-heading-1 {
+  font-size: 4rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 61.6px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.heading-heading-2 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 52.8px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.heading-heading-3 {
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 44px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.heading-heading-4 {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 35.2px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.heading-heading-5 {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26.4px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.heading-heading-6 {
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-large-text-bold {
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-large-text-regular {
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-medium-text-bold {
+  font-size: 1.125rem;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 25.2px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-medium-text-regular {
+  font-size: 1.125rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 25.2px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-normal-text-bold {
+  font-size: 1.125rem;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 25.2px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-normal-text-regular {
+  font-size: 1rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22.4px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-small-text-bold {
+  font-size: 0.875rem;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19.6px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.body-small-text-regular {
+  font-size: 0.875rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19.6px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.shadow-card-with-illustration {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-card-2 {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Site {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
