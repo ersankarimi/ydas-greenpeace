@@ -65,6 +65,16 @@
   }
 
   /* End Navbar Dropdown */
+
+  /* Footer */
+
+  .footer__contents-bottom > img:nth-child(1) {
+    bottom: 1.9%;
+    z-index: 10;
+    height: 4rem;
+  }
+
+  /* End Footer */
 }
 
 /* 'md': '768px', */
@@ -110,10 +120,45 @@
   }
 
   /* End Homepage Artikel Section */
+
+  /* Homepage Aktivis Section */
+
+  .homepage-aktivis-section__header > p {
+    max-width: 75%;
+  }
+
+  .homepage-aktivis-section__article-item > h4 {
+    font-size: var(--text-4xl);
+  }
+
+  .homepage-aktivis-section__article-item__contents > h3 {
+    font-size: var(--text-xl);
+  }
+
+  /* End Homepage Aktivis Section */
+
+  /* Footer */
+
+  .footer__contents-top,
+  .footer__contents-top__list-container {
+    text-align: left;
+    flex-direction: row;
+  }
+
+  .footer__contents-top__list-card {
+    align-items: start;
+  }
+
+  /* End Footer */
 }
 
 /* 'lg': '1024px', */
 @media (min-width: 1024px) {
+  .navbar__brand-logo__logo-container {
+    width: 100%;
+    height: 36px;
+  }
+
   .container {
     max-width: 1024px;
   }
@@ -192,6 +237,58 @@
   }
 
   /* End Homepage Artikel Section */
+
+  /* Homepage Aktivis Section */
+
+  .homepage-aktivis-section__header > p {
+    max-width: 80%;
+  }
+
+  .homepage-aktivis-section__article-item {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+    max-width: 768px;
+  }
+
+  .homepage-aktivis-section__article-item > h4 {
+    font-size: var(--text-6xl);
+  }
+
+  .homepage-aktivis-section__article-item__contents > h3 {
+    font-size: var(--text-2xl);
+  }
+
+  .homepage-aktivis-section__article__illustration-big,
+  .homepage-aktivis-section__article__illustration-small {
+    display: block;
+    z-index: -100;
+  }
+
+  .homepage-aktivis-section__article__illustration-big:nth-child(1) {
+    top: 4%;
+    right: -12rem;
+  }
+
+  .homepage-aktivis-section__article__illustration-big:nth-child(2) {
+    bottom: 4%;
+    left: -12rem;
+  }
+
+  .homepage-aktivis-section__article__illustration-small:nth-child(3) {
+    left: -6rem;
+    top: 12%;
+  }
+
+  .homepage-aktivis-section__article__illustration-small:nth-child(4) {
+    right: -6rem;
+    bottom: 12%;
+  }
+
+  /* End Homepage Aktivis Section */
 }
 
 /* 'xl': '1280px', */
@@ -240,6 +337,7 @@
     /* padding: 0 1rem; */
     gap: 0;
     grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: none;
   }
 
   .homepage-artikel-section__article__picture {
@@ -254,6 +352,14 @@
   }
 
   /* End Homepage Artikel Section */
+
+  /* Homepage Aktivis Section */
+
+  .homepage-aktivis-section__header > p {
+    max-width: 65%;
+  }
+
+  /* End Homepage Aktivis Section */
 }
 
 /* '2xl': '1536px', */
@@ -273,6 +379,16 @@
   /* End Hero */
 
   /* Homepage Artikel Section */
+
+  .homepage-aktivis-section__article
+    > .homepage-aktivis-section__article-item:nth-child(odd) {
+    right: 2rem;
+  }
+
+  .homepage-aktivis-section__article
+    > .homepage-aktivis-section__article-item:nth-child(even) {
+    left: 2rem;
+  }
 
   /* End Homepage Artikel Section */
 }
