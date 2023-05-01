@@ -110,6 +110,11 @@
 
   /* Homepage About Section */
 
+  .homepage-about-section__left__contents__link {
+    padding: 1rem 2rem;
+    font-size: var(--text-lg);
+  }
+
   .homepage-about-section__left__picture-container {
     height: 2rem;
   }
