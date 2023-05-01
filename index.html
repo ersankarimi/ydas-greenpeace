@@ -5,10 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Greenpeace</title>
   </head>
   <body class="Site">
-    <header class="navbar">Header</header>
+    <div class="navbar-container">
+      <header class="navbar container">
+        <a href="/" class="navbar__brand-logo">
+          <picture class="navbar__brand-logo__logo-container">
+            <img src="./assets//images/logo-greenpeace-white.png" alt="" />
+          </picture>
+        </a>
+        <nav class="navbar__nav">
+          <button
+            type="button"
+            class="navbar__nav__hamburger-button"
+            aria-expanded="false"
+            data-state="closed"
+            data-target=".navbar__nav-list"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+          <ul class="navbar__nav-list">
+            <li class="navbar__nav-list__item">
+              <div class="navbar__nav-list__item__dropdown">
+                <button
+                  type="button"
+                  class="navbar__nav-list__item__dropdown__button"
+                  aria-expanded="false"
+                  data-state="closed"
+                >
+                  Kenali Greenpeace
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <ul class="navbar__nav-list__item__dropdown__menu">
+                  <li class="navbar__nav-list__item__dropdown__menu-item">
+                    <a href="/">Tentang Kami</a>
+                  </li>
+                  <li class="navbar__nav-list__item__dropdown__menu-item">
+                    <a href="/">Sejarah Greenpeace</a>
+                  </li>
+                  <li class="navbar__nav-list__item__dropdown__menu-item">
+                    <a href="/">Kemenangan Greenpeace</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navbar__nav-list__item">
+              <a href="/">Artikel</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main class="Site-content">Main</main>
 
